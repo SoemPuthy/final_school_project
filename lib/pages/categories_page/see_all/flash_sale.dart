@@ -1,8 +1,8 @@
-import 'package:final_project/pages/home_page/flash_sale/items/applewatch_page.dart';
-import 'package:final_project/pages/home_page/flash_sale/items/hoodie_page.dart';
-import 'package:final_project/pages/home_page/flash_sale/items/keyboard_page.dart';
-import 'package:final_project/pages/home_page/flash_sale/items/nikeshoes_page.dart';
-import 'package:final_project/pages/home_page/flash_sale/items/xbox_page.dart';
+import 'package:final_project/pages/categories_page/flash_sale/items/applewatch_page.dart';
+import 'package:final_project/pages/categories_page/flash_sale/items/hoodie_page.dart';
+import 'package:final_project/pages/categories_page/flash_sale/items/keyboard_page.dart';
+import 'package:final_project/pages/categories_page/flash_sale/items/nikeshoes_page.dart';
+import 'package:final_project/pages/categories_page/flash_sale/items/xbox_page.dart';
 import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/material.dart%20';
 

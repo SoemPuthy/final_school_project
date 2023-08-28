@@ -1,8 +1,8 @@
 import 'package:final_project/pages/bag_page/bag_page.dart';
 import 'package:final_project/pages/favorite_page/favorite_page.dart';
 import 'package:final_project/pages/home_page/home_page.dart';
-import 'package:final_project/profile_page/profile_page.dart';
-import 'package:final_project/search_page/search_page.dart';
+import 'package:final_project/pages/profile_page/profile_page.dart';
+import 'package:final_project/pages/search_page/search_page.dart';
 import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/material.dart';
 
