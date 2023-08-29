@@ -26,11 +26,6 @@ class _MainPageState extends State<MainPage> {
           ProfilePage(),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.orange,
-        child: Icon(Icons.add),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectIndex,

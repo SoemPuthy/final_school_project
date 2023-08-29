@@ -1,8 +1,8 @@
 import 'package:final_project/authentication/signin_page/sign_in_button/sign_in_button.dart';
 import 'package:final_project/authentication/signup_page/signup_page.dart';
-import 'package:final_project/home_page/home_page.dart';
+import 'package:final_project/pages/home_page/home_page.dart';
 import 'package:final_project/main_page.dart';
-import 'package:final_project/slider_page/slider_home_page.dart';
+import 'package:final_project/pages/slider_page/slider_home_page.dart';
 import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/material.dart';
 
