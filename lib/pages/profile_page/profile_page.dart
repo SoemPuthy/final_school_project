@@ -28,7 +28,7 @@ class ProfilePage extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.notifications_outlined,
+              Icons.person_outline,
             ),
           ),
         ],
@@ -230,10 +230,10 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
-            height: 70,
+            height: 65,
             child: GestureDetector(
               onTap: () {},
               child: Card(
@@ -248,7 +248,7 @@ class ProfilePage extends StatelessWidget {
                       children: const [
                         Icon(
                           Icons.payments_outlined,
-                          color: Colors.black54,
+                          color: Colors.orange,
                           size: 35,
                         ),
                         SizedBox(width: 15),
@@ -258,7 +258,10 @@ class ProfilePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Icon(Icons.arrow_forward_ios_rounded)
+                    const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: primaryColor,
+                    )
                   ],
                 ),
               ),
@@ -266,7 +269,7 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
-            height: 70,
+            height: 65,
             child: GestureDetector(
               onTap: () {},
               child: Card(
@@ -281,7 +284,7 @@ class ProfilePage extends StatelessWidget {
                       children: const [
                         Icon(
                           Icons.workspace_premium,
-                          color: Colors.black54,
+                          color: Colors.red,
                           size: 35,
                         ),
                         SizedBox(width: 15),
@@ -297,7 +300,10 @@ class ProfilePage extends StatelessWidget {
                           'Gold Member',
                           style: TextStyle(color: Colors.black45),
                         ),
-                        Icon(Icons.arrow_forward_ios_rounded),
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: primaryColor,
+                        ),
                       ],
                     ),
                   ],
@@ -307,7 +313,7 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
-            height: 70,
+            height: 65,
             child: GestureDetector(
               onTap: () {},
               child: Card(
@@ -321,8 +327,8 @@ class ProfilePage extends StatelessWidget {
                     Row(
                       children: const [
                         Icon(
-                          Icons.workspace_premium,
-                          color: Colors.black54,
+                          Icons.local_activity_outlined,
+                          color: Colors.deepOrange,
                           size: 35,
                         ),
                         SizedBox(width: 15),
@@ -335,10 +341,53 @@ class ProfilePage extends StatelessWidget {
                     Row(
                       children: const [
                         Text(
-                          'Gold Member',
+                          '10 Voucher',
                           style: TextStyle(color: Colors.black45),
                         ),
-                        Icon(Icons.arrow_forward_ios_rounded),
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: primaryColor,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 20, right: 20),
+            height: 65,
+            child: GestureDetector(
+              onTap: () {},
+              child: Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: const [
+                        Icon(
+                          Icons.storefront,
+                          color: Colors.teal,
+                          size: 35,
+                        ),
+                        SizedBox(width: 15),
+                        Text(
+                          'Followed Store',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: const [
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: primaryColor,
+                        ),
                       ],
                     ),
                   ],
