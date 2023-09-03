@@ -95,6 +95,7 @@ flutter:
     - assets/img/iwatch.png
     - assets/img/profile.png
     - assets/img/profile.jpg
+    - assets/img/profile3.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
