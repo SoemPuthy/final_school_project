@@ -138,14 +138,14 @@ class _HoodiePageState extends State<HoodiePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Select Size',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'see all',
                         style: TextStyle(
                             color: secondaryColor,

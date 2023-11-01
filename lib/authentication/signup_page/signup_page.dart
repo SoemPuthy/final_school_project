@@ -56,6 +56,7 @@ class SignUpPage extends StatelessWidget {
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.person_outline),
                     hintText: 'Full Name',
+                    labelText: 'Full Name',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                     ),
@@ -71,6 +72,7 @@ class SignUpPage extends StatelessWidget {
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.email_outlined),
                     hintText: 'Email',
+                    labelText: 'Email',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                     ),
@@ -86,6 +88,7 @@ class SignUpPage extends StatelessWidget {
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.lock_outline_rounded),
                     hintText: 'Password',
+                    labelText: 'Password',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                     ),
@@ -101,7 +104,7 @@ class SignUpPage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => MainPage()));
                 },
                 style: buttonSignUp,
-                child: Text('Sign Up'),
+                child: const Text('Sign Up'),
               ),
             ),
             const SizedBox(height: 5),
@@ -147,7 +150,7 @@ class SignUpPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SignInPage()));
+                              builder: (context) => const SignInPage()));
                     },
                     child: const Text(
                       'Sing In',

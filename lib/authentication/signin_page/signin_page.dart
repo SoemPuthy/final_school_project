@@ -1,3 +1,4 @@
+import 'package:final_project/authentication/forgotpassword_page/forgot_password_page.dart';
 import 'package:final_project/authentication/signin_page/sign_in_button/sign_in_button.dart';
 import 'package:final_project/authentication/signup_page/signup_page.dart';
 import 'package:final_project/pages/home_page/home_page.dart';
@@ -69,6 +70,7 @@ class SignInPage extends StatelessWidget {
                 child: TextField(
                   onTap: () {},
                   decoration: const InputDecoration(
+                    labelText: 'Email',
                     hintText: 'Email',
                     prefixIcon: Icon(Icons.email_outlined),
                     border: OutlineInputBorder(
@@ -86,6 +88,7 @@ class SignInPage extends StatelessWidget {
                 child: TextField(
                   onTap: () {},
                   decoration: const InputDecoration(
+                    labelText: 'Password',
                     hintText: 'Password',
                     prefixIcon: Icon(Icons.lock_outline_rounded),
                     border: OutlineInputBorder(
@@ -98,7 +101,12 @@ class SignInPage extends StatelessWidget {
               alignment: Alignment.centerRight,
               height: 50,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ForgotPasswordPage()));
+                },
                 child: const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Text(
@@ -116,7 +124,7 @@ class SignInPage extends StatelessWidget {
                 child: ElevatedButton(
                   style: buttonSignIn,
                   onPressed: () {
-                    Navigator.push(context,
+                    Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => MainPage()));
                   },
                   child: const Text('Sign In'),
@@ -138,12 +146,12 @@ class SignInPage extends StatelessWidget {
                     radius: 25,
                     backgroundImage: AssetImage('assets/img/google.png'),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: 10),
                   CircleAvatar(
                     radius: 25,
                     backgroundImage: AssetImage('assets/img/fb.png'),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: 10),
                   CircleAvatar(
                     radius: 25,
                     backgroundImage: AssetImage('assets/img/twitter.png'),

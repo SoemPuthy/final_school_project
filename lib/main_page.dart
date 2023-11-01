@@ -20,10 +20,10 @@ class _MainPageState extends State<MainPage> {
         index: _selectIndex,
         children: [
           HomePage(),
-          SearchPage(),
-          FavoritePage(),
-          BagPage(),
-          ProfilePage(),
+          const SearchPage(),
+          const FavoritePage(),
+          const BagPage(),
+          const ProfilePage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

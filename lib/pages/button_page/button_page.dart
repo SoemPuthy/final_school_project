@@ -15,3 +15,12 @@ final ButtonStyle buttonDetail = ElevatedButton.styleFrom(
   shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(50))),
 );
+
+final ButtonStyle buttonResetPassword = ElevatedButton.styleFrom(
+  elevation: 10,
+  minimumSize: const Size(360, 50),
+  primary: primaryColor,
+  shape: const RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(50)),
+  ),
+);

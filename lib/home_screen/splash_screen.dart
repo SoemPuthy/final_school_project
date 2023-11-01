@@ -1,5 +1,4 @@
 import 'package:final_project/authentication/signin_page/signin_page.dart';
-import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart%20';
 
@@ -14,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 3)).then((value) {
       Navigator.of(context).pushReplacement(
-          CupertinoPageRoute(builder: (context) => SignInPage()));
+          CupertinoPageRoute(builder: (context) => const SignInPage()));
     });
   }
 

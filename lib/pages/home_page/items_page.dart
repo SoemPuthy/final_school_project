@@ -18,7 +18,7 @@ class _ItemPageState extends State<ItemPage> {
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
-        margin: EdgeInsets.only(left: 20, right: 20),
+        margin: const EdgeInsets.only(left: 20, right: 20),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: items,
@@ -26,7 +26,7 @@ class _ItemPageState extends State<ItemPage> {
             return Stack(
               children: [
                 Container(
-                  margin: EdgeInsets.only(right: 20, left: 20),
+                  margin: const EdgeInsets.only(right: 20, left: 20),
                   height: 260,
                   width: 200,
                   child: GestureDetector(

@@ -41,11 +41,11 @@ class _SliderPState extends State<SliderHomePage> {
                     height: 170,
                     autoPlay: true,
                     enableInfiniteScroll: false,
-                    autoPlayAnimationDuration: Duration(seconds: 2),
+                    autoPlayAnimationDuration: const Duration(seconds: 2),
                     enlargeCenterPage: true,
                     onPageChanged: (index, reason) =>
                         setState(() => activeIndex = index))),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             buildIndicator()
           ],
         ),
@@ -55,7 +55,7 @@ class _SliderPState extends State<SliderHomePage> {
 
   Widget buildIndicator() => AnimatedSmoothIndicator(
         onDotClicked: animateToSlide,
-        effect: ExpandingDotsEffect(
+        effect: const ExpandingDotsEffect(
             dotWidth: 10, dotHeight: 10, activeDotColor: secondaryColor),
         activeIndex: activeIndex,
         count: urlImages.length,

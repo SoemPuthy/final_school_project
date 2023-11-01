@@ -1,15 +1,18 @@
+import 'package:final_project/main.dart';
 import 'package:final_project/main_page.dart';
-import 'package:final_project/pages/profile_page/edit_profile_page.dart';
 import 'package:final_project/pages/setting_page/setting_page.dart';
 import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/material.dart%20';
+import 'package:provider/provider.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final customer = Provider.of<Customer>(context);
     return Scaffold(
+      backgroundColor: Colors.black.withOpacity(0.1),
       appBar: AppBar(
         toolbarHeight: 60,
         elevation: 0,
@@ -54,9 +57,9 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    const Text(
-                      'Soem Puthy',
-                      style: TextStyle(
+                    Text(
+                      customer.name,
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.w700),
@@ -115,7 +118,7 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 20, top: 20, right: 20),
+              margin: const EdgeInsets.only(left: 20, right: 20),
               height: 90,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -125,6 +128,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Container(
                         child: Card(
+                          elevation: 3,
                           color: Colors.white.withOpacity(0.9),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -152,6 +156,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Container(
                         child: Card(
+                          elevation: 3,
                           color: Colors.white.withOpacity(0.9),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -179,6 +184,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Container(
                         child: Card(
+                          elevation: 3,
                           color: Colors.white.withOpacity(0.9),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -206,6 +212,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Container(
                         child: Card(
+                          elevation: 3,
                           color: Colors.white.withOpacity(0.9),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25),
@@ -239,7 +246,8 @@ class ProfilePage extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {},
                 child: Card(
-                  elevation: 0,
+                  color: Colors.white,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -248,6 +256,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Row(
                         children: const [
+                          SizedBox(width: 10),
                           Icon(
                             Icons.payments_outlined,
                             color: Colors.orange,
@@ -263,7 +272,7 @@ class ProfilePage extends StatelessWidget {
                       const Icon(
                         Icons.arrow_forward_ios_rounded,
                         color: secondaryColor,
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -275,7 +284,7 @@ class ProfilePage extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {},
                 child: Card(
-                  elevation: 0,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -284,6 +293,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Row(
                         children: const [
+                          SizedBox(width: 10),
                           Icon(
                             Icons.workspace_premium,
                             color: Colors.red,
@@ -319,7 +329,7 @@ class ProfilePage extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {},
                 child: Card(
-                  elevation: 0,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -328,6 +338,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Row(
                         children: const [
+                          SizedBox(width: 10),
                           Icon(
                             Icons.local_activity_outlined,
                             color: Colors.deepOrange,
@@ -363,7 +374,7 @@ class ProfilePage extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {},
                 child: Card(
-                  elevation: 0,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -372,6 +383,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Row(
                         children: const [
+                          SizedBox(width: 10),
                           Icon(
                             Icons.storefront,
                             color: Colors.teal,
@@ -408,7 +420,7 @@ class ProfilePage extends StatelessWidget {
                           builder: (context) => const SettingPage()));
                 },
                 child: Card(
-                  elevation: 0,
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -417,6 +429,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       Row(
                         children: const [
+                          SizedBox(width: 10),
                           Icon(
                             Icons.settings,
                             color: Colors.black45,
@@ -435,6 +448,49 @@ class ProfilePage extends StatelessWidget {
                             Icons.arrow_forward_ios_rounded,
                             color: secondaryColor,
                           ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 20, right: 20),
+              height: 65,
+              child: GestureDetector(
+                onTap: () {},
+                child: Card(
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: const [
+                          SizedBox(width: 10),
+                          Icon(
+                            Icons.person,
+                            size: 30,
+                            color: primaryColor,
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Text(
+                            'Information',
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            color: secondaryColor,
+                          )
                         ],
                       ),
                     ],

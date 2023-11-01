@@ -2,6 +2,7 @@ import 'package:final_project/pages/categories_page/categories_list_views.dart';
 import 'package:final_project/pages/categories_page/flashsale_list_views.dart';
 import 'package:final_project/pages/categories_page/see_all/categories.dart';
 import 'package:final_project/pages/categories_page/see_all/flash_sale.dart';
+import 'package:final_project/pages/home_page/sidebar_page.dart';
 import 'package:final_project/pages/slider_page/slider_home_page.dart';
 import 'package:final_project/utilities/constain.dart';
 import 'package:flutter/material.dart';
@@ -16,26 +17,24 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     int items = 5;
     return Scaffold(
+      drawer: const SideBarPage(),
       appBar: AppBar(
-        toolbarHeight: 70,
-        elevation: 0,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          icon: const Icon(Icons.menu_rounded, color: primaryColor, size: 25),
-          onPressed: () {},
-        ),
+        elevation: 3,
+        backgroundColor: primaryColor,
+        centerTitle: true,
+        title: const Text('V Shop'),
         actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(Icons.mail_outline,
-                  color: primaryColor, size: 25)),
+                  color: Colors.white, size: 25)),
           const SizedBox(
             width: 10,
           ),
           IconButton(
               onPressed: () {},
               icon: const Icon(Icons.notifications_outlined,
-                  color: primaryColor, size: 25)),
+                  color: Colors.white, size: 25)),
         ],
       ),
       body: SingleChildScrollView(
